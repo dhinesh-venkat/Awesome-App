@@ -1,4 +1,5 @@
 import 'package:awesome_app/routes/routes.dart';
+import 'package:awesome_app/screens/alerts.dart';
 import 'package:awesome_app/screens/forms.dart';
 import 'package:awesome_app/screens/home.dart';
 import 'package:awesome_app/screens/images_icons.dart';
@@ -25,6 +26,7 @@ class MyApp extends StatelessWidget {
         Routes.login: (context) => const StackScreen(),
         Routes.forms: (context) => FormScreen(),
         Routes.imagesicons: (context) => ImagesAndIcons(),
+        Routes.alerts: (context) => AlertScreen(),
       },
     );
   }
