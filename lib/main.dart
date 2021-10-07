@@ -1,6 +1,8 @@
+import 'package:awesome_app/screens/alerts.dart';
 import 'package:awesome_app/screens/forms.dart';
 import 'package:awesome_app/screens/home.dart';
 import 'package:awesome_app/screens/image_icon.dart';
+import 'package:awesome_app/screens/tabs.dart';
 import 'package:flutter/material.dart';
 
 import 'screens/stack_example.dart';
@@ -26,6 +28,8 @@ class MyApp extends StatelessWidget {
         Routes.stack: (context) => StackScreen(),
         Routes.forms: (context) => Forms(),
         Routes.images: (context) => ImagesAndIcons(),
+        Routes.alerts: (context) => AlertScreen(),
+        Routes.tabs: (context) => TabbarScreen(),
       },
     );
   }
