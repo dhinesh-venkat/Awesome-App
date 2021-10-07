@@ -4,6 +4,7 @@ import 'package:awesome_app/screens/forms.dart';
 import 'package:awesome_app/screens/home.dart';
 import 'package:awesome_app/screens/images_icons.dart';
 import 'package:awesome_app/screens/stack_example.dart';
+import 'package:awesome_app/screens/tab_bar.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -27,6 +28,7 @@ class MyApp extends StatelessWidget {
         Routes.forms: (context) => FormScreen(),
         Routes.imagesicons: (context) => ImagesAndIcons(),
         Routes.alerts: (context) => AlertScreen(),
+        Routes.tabBar: (context) => TabBarScreen(),
       },
     );
   }
