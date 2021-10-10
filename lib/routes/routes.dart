@@ -1,3 +1,4 @@
+import 'package:awesome_app/screens/age_calculator.dart';
 import 'package:awesome_app/screens/alerts.dart';
 import 'package:awesome_app/screens/forms.dart';
 import 'package:awesome_app/screens/image_icon.dart';
@@ -10,4 +11,5 @@ class Routes {
   static const String images = ImagesAndIcons.routeName;
   static const String alerts = AlertScreen.routeName;
   static const String tabs = TabbarScreen.routeName;
+  static const String age = AgeCalculator.routeName;
 }
