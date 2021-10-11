@@ -1,5 +1,6 @@
 import 'package:awesome_app/screens/age_calculator.dart';
 import 'package:awesome_app/screens/alerts.dart';
+import 'package:awesome_app/screens/bmi.dart';
 import 'package:awesome_app/screens/forms.dart';
 import 'package:awesome_app/screens/home.dart';
 import 'package:awesome_app/screens/image_icon.dart';
@@ -44,6 +45,7 @@ class MyApp extends StatelessWidget {
         Routes.alerts: (context) => AlertScreen(),
         Routes.tabs: (context) => TabbarScreen(),
         Routes.age: (context) => AgeCalculator(),
+        Routes.bmi: (context) => BMIScreen(),
       },
     );
   }
