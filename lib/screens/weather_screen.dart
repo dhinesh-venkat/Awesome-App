@@ -3,6 +3,8 @@ import 'package:awesome_app/services/weather_service.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
+//https://openweathermap.org/current
+
 class WeatherScreen extends StatefulWidget {
   const WeatherScreen({Key? key}) : super(key: key);
   static const String routeName = '/weather';
@@ -39,7 +41,6 @@ class _WeatherScreenState extends State<WeatherScreen> {
   final Color background = const Color(0xff35AAFD);
 
   String location = 'Theni';
-
 
   Widget twoTexts(String top, String bottom) {
     return Column(
