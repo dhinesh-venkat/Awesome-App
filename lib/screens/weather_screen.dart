@@ -14,7 +14,7 @@ class WeatherScreen extends StatefulWidget {
 }
 
 class _WeatherScreenState extends State<WeatherScreen> {
-  void _getData(String place) async {
+  void _getData() async {
     setState(() {
       isLoading = true;
     });
@@ -31,7 +31,7 @@ class _WeatherScreenState extends State<WeatherScreen> {
   @override
   void initState() {
     super.initState();
-    _getData(location);
+    _getData();
   }
 
   final TextEditingController controller = TextEditingController();
@@ -77,7 +77,7 @@ class _WeatherScreenState extends State<WeatherScreen> {
         TextButton(
             onPressed: () {
               location = controller.value.text;
-              _getData(location);
+              _getData();
               Navigator.of(context).pop();
             },
             child: const Text("Okay")),
