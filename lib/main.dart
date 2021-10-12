@@ -5,6 +5,7 @@ import 'package:awesome_app/screens/forms.dart';
 import 'package:awesome_app/screens/home.dart';
 import 'package:awesome_app/screens/image_icon.dart';
 import 'package:awesome_app/screens/tabs.dart';
+import 'package:awesome_app/screens/weather_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
@@ -46,6 +47,7 @@ class MyApp extends StatelessWidget {
         Routes.tabs: (context) => TabbarScreen(),
         Routes.age: (context) => AgeCalculator(),
         Routes.bmi: (context) => BMIScreen(),
+        Routes.weather: (context) => WeatherScreen(),
       },
     );
   }
