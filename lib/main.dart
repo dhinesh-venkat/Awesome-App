@@ -5,6 +5,7 @@ import 'package:awesome_app/screens/bmi.dart';
 import 'package:awesome_app/screens/forms.dart';
 import 'package:awesome_app/screens/home.dart';
 import 'package:awesome_app/screens/images_icons.dart';
+import 'package:awesome_app/screens/journal.dart';
 import 'package:awesome_app/screens/stack_example.dart';
 import 'package:awesome_app/screens/tab_bar.dart';
 import 'package:awesome_app/screens/weather_screen.dart';
@@ -52,6 +53,7 @@ class MyApp extends StatelessWidget {
         Routes.age: (context) => AgeCalculator(),
         Routes.bmi: (context) => BMIScreen(),
         Routes.weather: (context) => WeatherScreen(),
+        Routes.journal: (context) => JournalScreen(),
       },
     );
   }
