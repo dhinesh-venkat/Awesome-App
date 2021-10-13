@@ -2,6 +2,7 @@ import 'package:awesome_app/screens/age_calculator.dart';
 import 'package:awesome_app/screens/alerts.dart';
 import 'package:awesome_app/screens/bmi.dart';
 import 'package:awesome_app/screens/forms.dart';
+import 'package:awesome_app/screens/journals.dart';
 import 'package:awesome_app/screens/stack_example.dart';
 import 'package:awesome_app/screens/tabs.dart';
 import 'package:awesome_app/screens/weather_screen.dart';
@@ -136,6 +137,24 @@ class Home extends StatelessWidget {
                 const ListTile(
                   leading: Text("Weather"),
                   trailing: Text("12/10/2021"),
+                ),
+                Divider(
+                  color: Colors.grey.withOpacity(0.5),
+                  thickness: 1,
+                ),
+              ],
+            ),
+          ),
+          GestureDetector(
+            onTap: () {
+              // Navigate to age journal screen
+              Navigator.of(context).pushNamed(JournalScreen.routeName);
+            },
+            child: Column(
+              children: <Widget>[
+                const ListTile(
+                  leading: Text("Journals"),
+                  trailing: Text("13/10/2021"),
                 ),
                 Divider(
                   color: Colors.grey.withOpacity(0.5),
